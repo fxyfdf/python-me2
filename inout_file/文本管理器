@@ -1,0 +1,11 @@
+提取文本：
+提取文本中的某一段
+url2 = "http://www.ip138.com/post"
+#拿到页面的内容
+content2 = requests.get(url2).content.decode('gb2312')
+#print (content2)
+f1.write(content2)
+#提取从哪一行开始
+start = content2.find('<map name=\"map_86\" id=\"map_86\">')
+end = content2.find('</map>')
+content2 = content2[start:end + len('</map>')].strip()
