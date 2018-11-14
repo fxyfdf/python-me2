@@ -45,18 +45,30 @@ r = requests.get('https://goss1.veer.com/creative/vcg/veer/612/veer-142468260.jp
 # r = requests.post('http://httpbin.org/post', data = json.dumps(form))
 # print(r.text)
 
-# cookie
-url = 'http://www.baidu.com'
-r = requests.get(url)
-print(r)
-print(type(r))
-cookies = r.cookies
-print(cookies)
-print(type(cookies))
-print(cookies.get_dict())
-for k, v in cookies.get_dict().items():
-    print(k, v)
+# # cookie
+# url = 'http://www.baidu.com'
+# r = requests.get(url)
+# print(r)
+# print(type(r))
+# cookies = r.cookies
+# print(cookies)
+# print(type(cookies))
+# print(cookies.get_dict())
+# for k, v in cookies.get_dict().items():
+#     print(k, v)
+#
+# cookies = {'c1': 'v1', 'c2': 'v2'}
+# r = requests.get('http://httpbin.org/cookies', cookies=cookies)
+# print(r.text)
 
-cookies = {'c1': 'v1', 'c2': 'v2'}
-r = requests.get('http://httpbin.org/cookies', cookies=cookies)
-print(r.text)
+# # 重定向 重定向历史
+# r = requests.head('http://github.com', allow_redirects = True)
+# print (r.url)
+# print (r.status_code)
+# print (r.history)
+#
+
+# 代理
+
+proxies = {'http': ',,,', 'https': '...'}
+r = requests.get('...', proxies = proxies)

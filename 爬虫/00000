@@ -1,0 +1,6 @@
+
+1 xpath  获取的内容是Selector或者SelectorList类型， extract()方法 // .extract_first('Default Image') 获取单个元素，并且可以设置默认值
+
+
+x.strip(str)   # 去除两边空格
+x.replace(old,new,count)  替换  #https://www.cnblogs.com/mlgjb/p/7879813.html
