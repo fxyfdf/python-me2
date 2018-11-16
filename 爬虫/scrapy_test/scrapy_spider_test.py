@@ -17,3 +17,6 @@ class Test(scrapy.Spider):
             print (i,":",title.strip(),"简介：",desc.strip(),desc_time.strip())
 
             #yield  { 'title':test_class.xpath('a/h4/test()').extract_first()     }
+
+# 命令行 执行
+#scrapy runspider scrapy_spider_test.py
